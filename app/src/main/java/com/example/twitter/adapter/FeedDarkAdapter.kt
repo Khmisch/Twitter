@@ -12,7 +12,7 @@ import com.example.twitter.model.Feed
 import com.example.twitter.model.Story
 import com.google.android.material.imageview.ShapeableImageView
 
-class FeedAdapter(var context: Context, var items:ArrayList<Feed>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class FeedDarkAdapter(var context: Context, var items:ArrayList<Feed>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val TYPE_ADDED_YES = 0
     private val TYPE_ADDED_NO = 1
@@ -33,9 +33,9 @@ class FeedAdapter(var context: Context, var items:ArrayList<Feed>): RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         if (viewType == TYPE_ADDED_YES){
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post_2, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post_2_dark, parent, false)
         return FeedDoubleViewHolder(view) }
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post_dark, parent, false)
         return FeedViewHolder(view)
     }
 

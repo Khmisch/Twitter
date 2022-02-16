@@ -2,24 +2,24 @@ package com.example.twitter.activity
 
 import android.content.Intent
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.MediaController
 import android.widget.VideoView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.twitter.R
 import com.example.twitter.adapter.FeedAdapter
+import com.example.twitter.adapter.FeedDarkAdapter
 import com.example.twitter.adapter.StoryAdapter
+import com.example.twitter.adapter.StoryDarkAdapter
 import com.example.twitter.model.Feed
 import com.example.twitter.model.Story
 
-
-class MainActivity : AppCompatActivity() {
-
+class DarkModeActivity : AppCompatActivity() {
     lateinit var recyclerFeed: RecyclerView
     lateinit var recyclerStory: RecyclerView
     lateinit var iv_twitter: ImageView
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_dark_mode)
 
         initViews()
     }
@@ -54,26 +54,18 @@ class MainActivity : AppCompatActivity() {
         videoView.start()
 
         iv_twitter.setOnClickListener( View.OnClickListener{
-            callDarkModeActivity()
+            finish()
         })
 
     }
 
-    private fun callDarkModeActivity() {
-        var intent = Intent(this, DarkModeActivity::class.java)
-        startActivity(intent)
-    }
-
-
-
-
     private fun refreshStoryAdapter(stories: ArrayList<Story>) {
-        val adapter = StoryAdapter(this, stories)
+        val adapter = StoryDarkAdapter(this, stories)
         recyclerStory!!.adapter = adapter
     }
 
     private fun refreshFeedAdapter(allFeeds: ArrayList<Feed>) {
-        val adapter = FeedAdapter(this, allFeeds)
+        val adapter = FeedDarkAdapter(this, allFeeds)
         recyclerFeed!!.adapter = adapter
     }
 

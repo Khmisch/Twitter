@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/drawable-v24/border_rounded.xml" value="0.1205" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/activity_dark_mode.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/activity_main.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_feed.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_feed_post_2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_feed_post_2_dark.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_feed_post_dark.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_feed_story_dark.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Twitter/app/src/main/res/layout/item_story.xml" value="0.20416666666666666" />
       </map>
     </option>

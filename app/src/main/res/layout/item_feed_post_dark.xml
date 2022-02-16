@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@color/black"
     android:orientation="vertical">
 
     <LinearLayout
@@ -38,7 +38,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:textStyle="bold"
-                   android:textColor="@color/black"
+                   android:textColor="@color/white"
                    android:textSize="15sp"
                    android:text="Khurshidbek Kurbanov"/>
 
@@ -48,13 +48,14 @@
                    android:layout_marginLeft="5dp"
                    android:layout_height="wrap_content"
                    android:text=" @khurshid • 1d"
-                   android:textColor="#90000000"
+                   android:textColor="#C4E6DFDF"
                    android:textSize="15sp"/>
 
                <ImageView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:src="@mipmap/ic_more"/>
+                   android:src="@mipmap/ic_more"
+                   app:tint="@color/white" />
 
            </LinearLayout>
 
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="I want to add a search icon to appear inside an EditText in the left edge?"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="14sp"/>
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -90,10 +91,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginRight="3dp"
-                        android:src="@mipmap/ic_comment"/>
+                        android:src="@mipmap/ic_comment"
+                        app:tint="@color/white" />
                     
                     <TextView
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4"
@@ -110,10 +112,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginRight="3dp"
-                        android:src="@mipmap/ic_crop"/>
+                        android:src="@mipmap/ic_crop"
+                        app:tint="@color/white" />
 
                     <TextView
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2"
@@ -130,10 +133,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginRight="3dp"
-                        android:src="@mipmap/ic_like"/>
+                        android:src="@mipmap/ic_like"
+                        app:tint="@color/white" />
 
                     <TextView
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5"
@@ -150,7 +154,8 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginRight="3dp"
-                        android:src="@mipmap/ic_upload"/>
+                        android:src="@mipmap/ic_upload"
+                        app:tint="@color/white" />
 
                 </LinearLayout>
 
