@@ -50,6 +50,7 @@ class DarkModeActivity : AppCompatActivity() {
         val mediaController = MediaController(this)
         mediaController.setAnchorView(videoView)
         mediaController.setMediaPlayer(videoView)
+        videoView.clipToOutline = true
         videoView.setMediaController(mediaController)
         videoView.start()
 

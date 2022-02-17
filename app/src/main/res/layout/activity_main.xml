@@ -170,7 +170,7 @@
                             <VideoView
                                 android:id="@+id/videoView"
                                 android:layout_width="match_parent"
-                                android:layout_height="225dp"
+                                android:layout_height="210dp"
                                 android:paddingTop="-10dp"
                                 android:paddingBottom="-10dp" />
                         </androidx.cardview.widget.CardView>
