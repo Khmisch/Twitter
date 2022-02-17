@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         mediaController.setAnchorView(videoView)
         mediaController.setMediaPlayer(videoView)
         videoView.setMediaController(mediaController)
+        videoView.clipToOutline = true
         videoView.start()
 
         iv_twitter.setOnClickListener( View.OnClickListener{
